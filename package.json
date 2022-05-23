@@ -10,9 +10,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "build": "gatsby build && mv public docs",
+    "clean": "gatsby clean && rm -rf docs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
